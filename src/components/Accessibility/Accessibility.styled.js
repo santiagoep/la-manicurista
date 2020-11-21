@@ -16,6 +16,7 @@ export const StyledContainer = styled.span`
 `;
 
 export const StyledItem = styled.div`
+  cursor: pointer;
   background-color: ${({ theme }) => theme.colors.bg.primary};
   color: ${({ theme }) => theme.colors.font.quaternary};
   font-size: ${({ theme }) => theme.font.size.caption};

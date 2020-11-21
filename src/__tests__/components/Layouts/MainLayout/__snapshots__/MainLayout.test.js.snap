@@ -8,19 +8,19 @@ exports[`<MainLayout /> should render snapshot 1`] = `
     className="Accessibilitystyled__StyledContainer-gi4yzg-0 dWjzqH"
   >
     <div
-      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__font-size"
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 jkNukM accessibility__font-size"
       onClick={[Function]}
     >
       Font size:md
     </div>
     <div
-      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__theme"
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 jkNukM accessibility__theme"
       onClick={[Function]}
     >
       Tema:LIGHT
     </div>
     <div
-      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__language"
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 jkNukM accessibility__language"
       onClick={[Function]}
     >
       Idioma:es
