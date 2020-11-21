@@ -60,7 +60,7 @@ const useTrackSearch = ({
     };
 
     const manageError = (e, times) => {
-      const status = e.response.status;
+      const { status } = e.response;
       if (status === statusCodes.UNAUTHORIZED) {
         refreshToken()
           .then((newToken) => {
@@ -68,7 +68,7 @@ const useTrackSearch = ({
             if (times <= MAX_ATTEMPTS)
               getTracks()
                 .then(manageResponse)
-                .catch((e) => manageError(e, times + 1));
+                .catch((err) => manageError(err, times + 1));
           })
           .catch(() => {
             nprogress.done();

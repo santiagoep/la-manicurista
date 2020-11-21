@@ -13,7 +13,7 @@ import {
   StyledPlayer,
   StyledHeader,
 } from "./Player.styled";
-import { buildArtistStr } from "@utils/strings";
+import buildArtistStr from "@utils/strings";
 import useControls from "@hooks/components/player/useControls";
 
 const Player = ({ img, name, artists, src, ...rest }) => {

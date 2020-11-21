@@ -1,7 +1,7 @@
 import React from "react";
 
 import Logo from "@components/Icons/Logo";
-import { childrenProps } from "@utils/common-propTypes";
+import childrenProps from "@utils/common-propTypes";
 import Accessibility from "@components/Accessibility/Accessibility";
 import { StyledContainer, StyledTitleContainer } from "./MainLayout.styled";
 

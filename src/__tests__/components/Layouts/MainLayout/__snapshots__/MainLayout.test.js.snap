@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<MainLayout /> should render snapshot 1`] = `
+<main
+  className="MainLayoutstyled__StyledContainer-yzzxwr-0 jLgpgd"
+>
+  <span
+    className="Accessibilitystyled__StyledContainer-gi4yzg-0 dWjzqH"
+  >
+    <div
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__font-size"
+      onClick={[Function]}
+    >
+      Font size:md
+    </div>
+    <div
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__theme"
+      onClick={[Function]}
+    >
+      Tema:LIGHT
+    </div>
+    <div
+      className="Accessibilitystyled__StyledItem-gi4yzg-1 aetAM accessibility__language"
+      onClick={[Function]}
+    >
+      Idioma:es
+    </div>
+  </span>
+  <div
+    className="MainLayoutstyled__StyledTitleContainer-yzzxwr-1 ciPhaR"
+  >
+    <img
+      alt="LaManicurista Logo"
+      className="Logo__StyledImage-sc-17vxmqw-0 gCRnca"
+      src="https://lamanicurista.com/wp-content/uploads/2019/01/Logo-La-manicurista-1.png"
+    />
+  </div>
+  <h1>
+    Test
+  </h1>
+</main>
+`;

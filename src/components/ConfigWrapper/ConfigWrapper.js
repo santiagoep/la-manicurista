@@ -5,7 +5,7 @@ import { ThemeProvider } from "styled-components";
 import i18n from "@config/translations";
 import themes from "@assets/styles/themes";
 import BaseStyles from "@assets/styles/BaseStyles";
-import { childrenProps } from "@utils/common-propTypes";
+import childrenProps from "@utils/common-propTypes";
 
 const ConfigWrapper = ({ children }) => {
   const { theme, fontSize, language } = useSelector(({ config }) => config);
@@ -24,7 +24,7 @@ const ConfigWrapper = ({ children }) => {
 };
 
 ConfigWrapper.propTypes = {
-  children: childrenProps,
+  children: childrenProps.isRequired,
 };
 
 export default ConfigWrapper;

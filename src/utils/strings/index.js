@@ -1,4 +1,4 @@
-export const buildArtistStr = (artists) =>
+const buildArtistStr = (artists) =>
   artists.reduce((acc, curr, index) => {
     if (index + 1 < artists.length) {
       acc += `${curr.name} & `;
@@ -7,3 +7,5 @@ export const buildArtistStr = (artists) =>
     }
     return acc;
   }, "");
+
+export default buildArtistStr;

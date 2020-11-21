@@ -1,6 +1,6 @@
 import PropTypes from "prop-types";
 
-export const childrenProps = PropTypes.oneOfType([
+const childrenProps = PropTypes.oneOfType([
   PropTypes.node,
   PropTypes.string,
   PropTypes.number,
@@ -8,3 +8,5 @@ export const childrenProps = PropTypes.oneOfType([
   PropTypes.element,
   PropTypes.func,
 ]);
+
+export default childrenProps;

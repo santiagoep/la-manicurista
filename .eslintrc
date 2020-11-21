@@ -8,16 +8,9 @@
   ],
   "plugins": ["prettier", "jest", "react-hooks"],
   "rules": {
-    "prettier/prettier": [
-      "error",
-      {
-        "trailingComma": "none"
-      }
-    ],
     "no-irregular-whitespace": 1,
     "no-else-return": "off",
     "import/order": "off",
-    "comma-dangle": ["error", "never"],
     "eqeqeq": ["error", "always"],
     "no-plusplus": "off",
     "import/extensions": "off",
@@ -27,8 +20,6 @@
       "error",
       { "allowShortCircuit": true, "allowTernary": true }
     ],
-    "quotes": [2, "single", "avoid-escape"],
-    "jsx-quotes": [2, "prefer-single"],
     "consistent-return": "off",
     "import/no-dynamic-require": "off",
     "no-param-reassign": "off",

@@ -1,10 +1,12 @@
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 import useConfig from "@hooks/useConfig";
 import { fontSizes } from "@utils/constants";
 import { StyledContainer, StyledItem } from "./Accessibility.styled";
 
 const Accessibility = () => {
+  const { t } = useTranslation();
   const [currentFontSize, setCurrentFontSize] = useState(1);
   const [
     { fontSize, theme, language },
@@ -24,11 +26,15 @@ const Accessibility = () => {
 
   return (
     <StyledContainer>
-      <StyledItem onClick={toggleFontSize}>
-        Tamaño de fuente: {fontSize}
+      <StyledItem className="accessibility__font-size" onClick={toggleFontSize}>
+        {`${t("fontSize")}:${fontSize}`}
       </StyledItem>
-      <StyledItem onClick={toggleTheme}>Tema: {theme}</StyledItem>
-      <StyledItem onClick={toggleLanguage}>Idioma: {language}</StyledItem>
+      <StyledItem className="accessibility__theme" onClick={toggleTheme}>
+        {`${t("theme")}:${theme}`}
+      </StyledItem>
+      <StyledItem className="accessibility__language" onClick={toggleLanguage}>
+        {`${t("language")}:${language}`}
+      </StyledItem>
     </StyledContainer>
   );
 };

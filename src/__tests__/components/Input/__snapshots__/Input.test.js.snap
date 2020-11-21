@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Input /> should render snapshot 1`] = `
+<div
+  className="Inputstyled__StyledContainer-sc-1lppf6-0 eyNlFv"
+>
+  <input
+    className="Inputstyled__StyledInput-sc-1lppf6-1 ftvCJP"
+    type="text"
+    value="Hola"
+  />
+</div>
+`;

@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Artist /> should render snapshot 1`] = `
+<p
+  className="Artiststyled-w1na2g-0 gTvxEj"
+>
+  Artists 1
+</p>
+`;

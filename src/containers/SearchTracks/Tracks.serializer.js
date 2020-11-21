@@ -4,7 +4,7 @@ const serializeArtists = (artists) =>
   }));
 
 const serializeTracks = (tracks) =>
-  tracks.map(({ artists, album, preview_url, name }) => ({
+  tracks.map(({ artists, album, preview_url: preview, name }) => ({
     name,
     imgPreviews: {
       small: {
@@ -14,7 +14,7 @@ const serializeTracks = (tracks) =>
       medium: { src: album?.images[1]?.url, alt: name },
       large: { src: album?.images[0]?.url, alt: name },
     },
-    preview: preview_url,
+    preview,
     artists: serializeArtists(artists),
   }));
 

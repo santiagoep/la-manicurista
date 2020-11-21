@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Artists /> should render snapshot 1`] = `
+<div
+  className="Artistsstyled-eny26o-0 graLyJ"
+>
+  <p
+    className="Artiststyled-w1na2g-0 gTvxEj artists__artist"
+  >
+    Artists 1
+  </p>
+  <p
+    className="Artiststyled-w1na2g-0 gTvxEj artists__artist"
+  >
+    Artists 2
+  </p>
+</div>
+`;

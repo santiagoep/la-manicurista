@@ -2,7 +2,7 @@ import React from "react";
 import PropTypes from "prop-types";
 import { Route as ReactRoute } from "react-router-dom";
 
-import { childrenProps } from "@utils/common-propTypes";
+import childrenProps from "@utils/common-propTypes";
 
 const Route = ({ exact, path, component, layout: Layout }) => (
   <Layout>
@@ -19,6 +19,7 @@ Route.propTypes = {
 
 Route.defaultProps = {
   exact: true,
+  // eslint-disable-next-line
   layout: ({ children }) => <>{children}</>,
 };
 

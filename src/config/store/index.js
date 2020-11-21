@@ -2,8 +2,7 @@
 /* eslint-disable global-require */
 /* eslint-disable import/no-extraneous-dependencies */
 import { createStore } from "redux";
-import { persistStore } from "redux-persist";
-import { persistReducer } from "redux-persist";
+import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 
 import rootReducer from "@reducers/index";

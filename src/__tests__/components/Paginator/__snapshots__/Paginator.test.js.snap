@@ -1,0 +1,269 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Paginator> should render snapshot 1`] = `
+<WrapperComponent
+  config={
+    Object {
+      "redux": true,
+      "theme": true,
+    }
+  }
+>
+  <Provider
+    store={
+      Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      }
+    }
+  >
+    <Component
+      theme={
+        Object {
+          "breakpoints": Object {
+            "lg": "@media only screen and (min-width: 75em)",
+            "md": "@media only screen and (min-width: 64em)",
+            "sm": "@media only screen and (min-width: 48em)",
+            "xs": "@media only screen and (min-width: 0em)",
+          },
+          "colors": Object {
+            "bg": Object {
+              "playerHeader": "rgba(236, 240, 241, 0.9)",
+              "primary": "#FF0177",
+              "quaternary": "#919191",
+              "quinary": "#4E8ECA",
+              "secondary": "#0D3B66",
+              "tertiary": "#FFF",
+            },
+            "borders": Object {
+              "active": "#FF0177",
+              "primary": "#FF0177",
+              "secondary": "#4E8ECA",
+            },
+            "font": Object {
+              "active": "#FF0177",
+              "danger": "#FF2624",
+              "primary": "#FF0177",
+              "quaternary": "#FFF",
+              "quinary": "#333",
+              "secondary": "#0D3B66",
+              "tertiary": "#919191",
+            },
+          },
+          "font": Object {
+            "size": Object {
+              "caption": "0.75rem",
+              "h1": "3.75rem",
+              "h2": "3rem",
+              "h3": "2.5rem",
+              "h4": "2.25rem",
+              "h5": "1.625rem",
+              "h6": "1.5rem",
+              "help": "0.625em",
+              "lg": "18px",
+              "md": "16px",
+              "paragraph1": "1.125rem",
+              "paragraph2": "1rem",
+              "paragraph3": "0.875rem",
+              "sm": "14px",
+              "small": "0.5rem",
+              "subtitle1": "1.1375rem",
+              "subtitle2": "1.25rem",
+              "subtitle3": "1.375rem",
+            },
+          },
+          "name": "LIGHT",
+          "utils": Object {
+            "spacing": [Function],
+          },
+        }
+      }
+    >
+      <Paginator
+        activeClassName="active"
+        breakClassName="break-me"
+        breakLabel="..."
+        containerClassName="paginator-container"
+        marginPagesDisplayed={2}
+        nextClassName="switch"
+        nextLabel=">"
+        onPageChange={[Function]}
+        pageCount={30}
+        pageRangeDisplayed={1}
+        previousClassName="switch"
+        previousLabel="<"
+        subContainerClassName="sub-container"
+      >
+        <Paginatorstyled__PaginatorContainer>
+          <div
+            className="Paginatorstyled__PaginatorContainer-sc-1np1bsq-0 eAGpcH"
+          >
+            <o
+              activeClassName="active"
+              breakClassName="break-me"
+              breakLabel="..."
+              containerClassName="paginator-container"
+              disableInitialCallback={false}
+              disabledClassName="disabled"
+              eventListener="onClick"
+              marginPagesDisplayed={2}
+              nextAriaLabel="Next page"
+              nextClassName="switch"
+              nextLabel=">"
+              onPageChange={[Function]}
+              pageCount={30}
+              pageRangeDisplayed={1}
+              previousAriaLabel="Previous page"
+              previousClassName="switch"
+              previousLabel="<"
+              subContainerClassName="sub-container"
+            >
+              <ul
+                className="paginator-container"
+              >
+                <li
+                  className="switch disabled"
+                >
+                  <a
+                    aria-disabled="true"
+                    aria-label="Previous page"
+                    onClick={[Function]}
+                    onKeyPress={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  >
+                    &lt;
+                  </a>
+                </li>
+                <l
+                  activeClassName="active"
+                  getEventListener={[Function]}
+                  key="0"
+                  page={1}
+                  pageSelectedHandler={[Function]}
+                  selected={true}
+                >
+                  <li
+                    className="active"
+                  >
+                    <a
+                      aria-current="page"
+                      aria-label="Page 1 is your current page"
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      1
+                    </a>
+                  </li>
+                </l>
+                <l
+                  activeClassName="active"
+                  getEventListener={[Function]}
+                  key="1"
+                  page={2}
+                  pageSelectedHandler={[Function]}
+                  selected={false}
+                >
+                  <li>
+                    <a
+                      aria-current={null}
+                      aria-label="Page 2"
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      2
+                    </a>
+                  </li>
+                </l>
+                <p
+                  breakClassName="break-me"
+                  breakHandler={[Function]}
+                  breakLabel="..."
+                  getEventListener={[Function]}
+                  key="2"
+                >
+                  <li
+                    className="break-me"
+                  >
+                    <a
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      ...
+                    </a>
+                  </li>
+                </p>
+                <l
+                  activeClassName="active"
+                  getEventListener={[Function]}
+                  key="28"
+                  page={29}
+                  pageSelectedHandler={[Function]}
+                  selected={false}
+                >
+                  <li>
+                    <a
+                      aria-current={null}
+                      aria-label="Page 29"
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      29
+                    </a>
+                  </li>
+                </l>
+                <l
+                  activeClassName="active"
+                  getEventListener={[Function]}
+                  key="29"
+                  page={30}
+                  pageSelectedHandler={[Function]}
+                  selected={false}
+                >
+                  <li>
+                    <a
+                      aria-current={null}
+                      aria-label="Page 30"
+                      onClick={[Function]}
+                      onKeyPress={[Function]}
+                      role="button"
+                      tabIndex="0"
+                    >
+                      30
+                    </a>
+                  </li>
+                </l>
+                <li
+                  className="switch"
+                >
+                  <a
+                    aria-disabled="false"
+                    aria-label="Next page"
+                    onClick={[Function]}
+                    onKeyPress={[Function]}
+                    role="button"
+                    tabIndex="0"
+                  >
+                    &gt;
+                  </a>
+                </li>
+              </ul>
+            </o>
+          </div>
+        </Paginatorstyled__PaginatorContainer>
+      </Paginator>
+    </Component>
+  </Provider>
+</WrapperComponent>
+`;

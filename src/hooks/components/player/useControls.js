@@ -10,7 +10,7 @@ const useControls = ({ src, player }) => {
 
   useEffect(() => {
     if (!src) pause();
-  }, [src]);
+  }, [src, pause]);
 
   return { play, pause };
 };

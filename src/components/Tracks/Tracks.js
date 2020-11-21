@@ -10,11 +10,11 @@ const Tracks = ({ tracks, onSelectTrack }) => {
       tracks.map((track, index) => (
         <Track
           {...track}
-          key={`track-${name}-${index}`}
+          key={`track-${track?.name}-${index}`}
           onClick={onSelectTrack}
         />
       )),
-    [tracks]
+    [tracks, onSelectTrack]
   );
   return <StyledContainer>{memoizedTracks}</StyledContainer>;
 };

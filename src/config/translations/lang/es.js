@@ -5,4 +5,7 @@ export default {
   noTrackPreview: ":( No tenemos una muestra para reproducir",
   searchATrack: "Busca una canción entre ",
   selectATrack: "Selecciona una canción",
+  fontSize: "Font size",
+  language: "Idioma",
+  theme: "Tema",
 };

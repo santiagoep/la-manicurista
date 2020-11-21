@@ -8,7 +8,7 @@ const apiHelper = (domain) => (endpoint) => {
   const endpointConfig = domainConfig?.endpoints[endpoint];
   const url = `${domainConfig?.domain}/${endpointConfig?.endpoint}`;
   const getOptions = (params, config) => {
-    let options = [];
+    const options = [];
     if (endpointConfig.method === methods.GET) {
       options.push({
         ...params,

@@ -14,7 +14,7 @@ const useTrackDetail = ({ imgPreviews, preview }) => {
     } else {
       setError(undefined);
     }
-  }, [preview, imgPreviews]);
+  }, [preview, imgPreviews, t]);
 
   return {
     currentImgPreview,

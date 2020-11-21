@@ -63,12 +63,14 @@ TrackDetail.propTypes = {
       alt: PropTypes.string,
     }),
   }),
+  preview: PropTypes.string,
   name: PropTypes.string,
   artists: Artists.propTypes.artists,
   onClick: PropTypes.func,
 };
 
 TrackDetail.defaultProps = {
+  preview: undefined,
   imgPreviews: undefined,
   name: undefined,
   artists: undefined,
