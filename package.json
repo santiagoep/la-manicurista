@@ -1,0 +1,60 @@
+{
+  "name": "la-manicurista",
+  "version": "1.0.0",
+  "description": "Technical test for the manicurist",
+  "main": "src/index.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "start": "webpack-dev-server --mode development",
+    "deploy": "npm run build && gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/santiagoep/la-manicurista.git"
+  },
+  "keywords": [],
+  "author": "Santiago Espitia Patiño <santiagoemp01@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/santiagoep/la-manicurista/issues"
+  },
+  "homepage": "https://github.com/santiagoep/la-manicurista",
+  "dependencies": {
+    "axios": "^0.21.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-react": "^7.19.0",
+    "i18next": "^19.8.4",
+    "moment": "^2.25.1",
+    "nprogress": "^0.2.0",
+    "prop-types": "^15.7.2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-i18next": "^11.7.3",
+    "react-paginate": "^6.5.0",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.1.2",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "reduxsauce": "^1.2.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "@babel/preset-react": "^7.9.4",
+    "babel-loader": "^8.1.0",
+    "css-loader": "^3.5.2",
+    "file-loader": "^6.0.0",
+    "gh-pages": "^2.2.0",
+    "html-loader": "^1.1.0",
+    "html-webpack-plugin": "^4.2.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3"
+  }
+}

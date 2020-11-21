@@ -1,2 +1,2 @@
-# la-manicurista
-Technical test for the manicurist
+# cv-react
+🗄 Curriculum vitae build in ReactJS
