@@ -5,30 +5,28 @@ import { themes } from "@utils/constants";
 export default {
   ...base,
   name: themes.DARK,
-  searchTrack: {
-    colors: {
-      inputBorder: colors.rose,
-      titleBg: colors.white,
-      titleColor: colors.gray,
+  colors: {
+    borders: {
+      primary: colors.indigoDye,
+      secondary: colors.rose,
+      active: colors.indigoDye,
     },
-    paginator: {
-      colors: {
-        font: colors.gray,
-        controls: colors.rose,
-        controlsFont: colors.white,
-        active: colors.rose,
-      },
+    bg: {
+      primary: colors.indigoDye,
+      secondary: colors.rose,
+      tertiary: colors.white,
+      quaternary: colors.gray,
+      quinary: colors.indigoDye,
+      playerHeader: colors.transparentGray,
     },
-  },
-  track: {
-    colors: {
-      font: colors.indigoDye,
-      hover: colors.danube,
-    },
-  },
-  artist: {
-    colors: {
-      font: colors.gray,
+    font: {
+      primary: colors.indigoDye,
+      secondary: colors.rose,
+      tertiary: colors.gray,
+      quaternary: colors.white,
+      quinary: colors.mineShaft,
+      active: colors.indigoDye,
+      danger: colors.red,
     },
   },
 };

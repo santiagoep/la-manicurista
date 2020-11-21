@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import React, { useMemo } from "react";
 
 import Artist from "../Artist/Artist";
@@ -16,6 +17,14 @@ const Artists = ({ artists }) => {
     [artists]
   );
   return <StyledContainer>{memoizedArtists}</StyledContainer>;
+};
+
+Artists.propTypes = {
+  artists: PropTypes.arrayOf(PropTypes.shape(Artist.propTypes)),
+};
+
+Artists.defaultProps = {
+  artists: [],
 };
 
 export default Artists;

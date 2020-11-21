@@ -1,5 +1,6 @@
+import breakpoints from "./breakpoints";
 import spacing from "@utils/styles/spacing";
-import { breakpointsValues, fontSizeValues } from "@utils/constants";
+import { fontSizeValues } from "@utils/constants";
 
 export default {
   font: {
@@ -24,12 +25,7 @@ export default {
       lg: `${fontSizeValues.LG}px`,
     },
   },
-  breakpoints: {
-    xs: `@media only screen and (min-width: ${breakpointsValues.XS}em)`,
-    sm: `@media only screen and (min-width: ${breakpointsValues.SM}em)`,
-    md: `@media only screen and (min-width: ${breakpointsValues.MD}em)`,
-    lg: `@media only screen and (min-width: ${breakpointsValues.LG}em)`,
-  },
+  breakpoints,
   utils: {
     spacing,
   },

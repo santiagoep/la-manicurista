@@ -14,7 +14,7 @@ export const StyledContainer = styled.div`
     right: 0;
     bottom: 0;
     top: 54.84%;
-    border: 1px solid ${({ theme }) => theme.searchTrack.colors.inputBorder};
+    border: 1px solid ${({ theme }) => theme.colors.borders.primary};
     box-sizing: border-box;
     border-radius: 0 0 20px 20px;
     border-top-style: none;
@@ -22,7 +22,7 @@ export const StyledContainer = styled.div`
 `;
 
 export const StyledInput = styled.input`
-  width: 100%;
+  width: calc(100% - ${({ theme }) => theme.utils.spacing(8)});
   border: none;
   outline: none;
 `;

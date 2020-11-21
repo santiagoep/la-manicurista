@@ -1,3 +1,5 @@
 import styled from "styled-components";
 
-export default styled.section``;
+export default styled.div`
+  width: 100%;
+`;

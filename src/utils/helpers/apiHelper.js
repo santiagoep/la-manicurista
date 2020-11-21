@@ -1,26 +1,28 @@
 import axios from "axios";
 
-import apis from "@config/apis";
 import { methods } from "@utils/constants";
+import getApisDefinition from "@config/apis";
 
 const apiHelper = (domain) => (endpoint) => {
-  const domainConfig = apis[domain];
+  const domainConfig = getApisDefinition()[domain];
   const endpointConfig = domainConfig?.endpoints[endpoint];
   const url = `${domainConfig?.domain}/${endpointConfig?.endpoint}`;
-  const getOptions = (params) => {
+  const getOptions = (params, config) => {
     let options = [];
     if (endpointConfig.method === methods.GET) {
       options.push({
         ...params,
         ...endpointConfig.config,
+        ...config,
       });
     } else {
       options.push(params);
-      options.push(endpointConfig.config);
+      options.push({ ...endpointConfig.config, ...config });
     }
     return options;
   };
-  return (params) => axios[endpointConfig.method](url, ...getOptions(params));
+  return (params, config) =>
+    axios[endpointConfig.method](url, ...getOptions(params, config));
 };
 
 export default apiHelper;

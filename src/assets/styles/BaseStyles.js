@@ -13,6 +13,9 @@ const BaseStyles = createGlobalStyle`
 
  html, body {
     font-size: ${({ fontSize, theme }) => theme.font.size[fontSize]};
+    position: relative;
+    min-height: 100vh;
+    min-width: 100vw; 
   }
 
   html {

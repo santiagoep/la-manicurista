@@ -1,6 +1,6 @@
 import apiHelper from "@utils/helpers/apiHelper";
 
-const useApis = (requiredEndpoints) =>
+const getApis = (requiredEndpoints) =>
   requiredEndpoints.reduce((apis, { domain, endpoints }) => {
     const api = apiHelper(domain);
     apis[domain] = endpoints.reduce((acc, curr) => {
@@ -10,4 +10,4 @@ const useApis = (requiredEndpoints) =>
     return apis;
   }, {});
 
-export default useApis;
+export default getApis;

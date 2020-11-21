@@ -1,48 +1,45 @@
-import React, { useCallback } from "react";
+import React from "react";
 
-import useTrackSearch from "@hooks/endpoints/useTrackSearch";
+import {
+  StyledContainer,
+  SearchTracksContainer,
+  StyledTrackDetailContainer,
+} from "./Home.styled";
+
+import useHome from "@hooks/pages/home/useHome";
+import TrackDetail from "@components/TrackDetail/TrackDetail";
 import SearchTracks from "@containers/SearchTracks/SearchTracks";
-import { StyledTitleContainer, SearchTracksContainer } from "./Home.styled";
 import serializeTracks from "@containers/SearchTracks/Tracks.serializer";
 
-import mock from "@__mocks__/apis/tracks";
-
 const Home = () => {
-  const { tracks, setPage, setQuery, total, limit } = useTrackSearch();
-  /* const tracks = mock,
-    setPage = () => {},
-    setQuery = () => {},
-    total = 100,
-    limit = 10; */
-
-  const changePage = useCallback((page) => setPage(page), [setPage]);
-
-  const changeQuery = useCallback(
-    (query) => {
-      if (query?.length > 0) setQuery(query);
-    },
-    [setQuery]
-  );
+  const {
+    tracks,
+    error,
+    total,
+    limit,
+    changePage,
+    changeQuery,
+    onSelectTrack,
+    currentTrack,
+  } = useHome();
 
   return (
-    <>
-      <StyledTitleContainer>
-        <img
-          src="https://lamanicurista.com/wp-content/uploads/2019/01/Logo-La-manicurista-1.png"
-          alt="LaManicurista Logo"
-        />
-      </StyledTitleContainer>
-      <SearchTracksContainer>
+    <StyledContainer>
+      <SearchTracksContainer className="home__track-list">
         <SearchTracks
           tracks={serializeTracks(tracks)}
+          error={error}
           total={total}
           limit={limit}
-          setPage={setPage}
           onPageChange={changePage}
           onSearch={changeQuery}
+          onSelectTrack={onSelectTrack}
         />
       </SearchTracksContainer>
-    </>
+      <StyledTrackDetailContainer className="home__track-detail">
+        <TrackDetail {...currentTrack} />
+      </StyledTrackDetailContainer>
+    </StyledContainer>
   );
 };
 

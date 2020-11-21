@@ -6,9 +6,5 @@ export const childrenProps = PropTypes.oneOfType([
   PropTypes.number,
   PropTypes.object,
   PropTypes.element,
+  PropTypes.func,
 ]);
-
-export const inputOptionsProps = PropTypes.shape({
-  label: PropTypes.string.isRequired,
-  value: PropTypes.string.isRequired,
-});

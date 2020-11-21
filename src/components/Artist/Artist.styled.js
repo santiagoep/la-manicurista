@@ -1,7 +1,5 @@
 import styled from "styled-components";
 
-const NAME = "artist";
-
 export default styled.p`
   margin-right: ${({ theme }) => theme.utils.spacing(1)};
   margin-top: ${({ theme }) => theme.utils.spacing(1)};
@@ -10,5 +8,5 @@ export default styled.p`
   }
   text-transform: capitalize;
   font-size: ${({ theme }) => theme.font.size.caption};
-  color: ${({ theme }) => theme[NAME].colors.font};
+  color: ${({ theme }) => theme.colors.font.tertiary};
 `;

@@ -5,4 +5,13 @@ export const StyledContainer = styled.section`
   height: 100%;
 `;
 
-export const StyledSearchContainer = styled.div``;
+export const StyledSearchContainer = styled.div`
+  width: 100%;
+`;
+
+export const StyledErrorMessage = styled.p`
+  text-align: center;
+  font-weight: bold;
+  color: ${({ theme }) => theme.colors.font.danger};
+  margin: ${({ theme }) => theme.utils.spacing(3, 0)};
+`;

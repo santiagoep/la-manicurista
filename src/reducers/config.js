@@ -12,7 +12,7 @@ export default Creators;
 
 export const INITIAL_STATE = {
   fontSize: fontSizes.MD,
-  theme: themes.DARK,
+  theme: themes.LIGHT,
   language: languages.ES,
 };
 
