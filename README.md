@@ -1,5 +1,4 @@
 # LaManicurista
-🗄 Prueba técnica para LaManicurista
 
 ## Stack
 - React con styled-components, redux, reduxsauce, react router, redux persist
